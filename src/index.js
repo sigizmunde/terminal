@@ -18,7 +18,7 @@ function ready(figletText) {
 }
 
 figlet.parseFont('myFont', font);
-figlet.text('Sigizmunde', { font: 'myFont' }, (err, data) => {
+figlet.text(`Sigiz${screen?.width < 480 ? '\n' : ''}munde`, { font: 'myFont' }, (err, data) => {
     if (err) {
         console.log(err);
     } else {
